@@ -1,0 +1,182 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!--   
+  <a name="sayfabasi"></a>
+    <h1>Baslik</h1>
+    <h2>Baslik</h2>
+    <h3>Baslik</h3>
+    <h4>Baslik</h4>
+    <h5>Baslik</h5>
+    <h6>Baslik</h6>
+
+    <p>
+        Lorem <b>ipsum</b>, <strong>dolor sit</strong> amet
+        <small>consectetur</small> <del>adipisicing</del> elit. <i>Esse</i> optio nihil ipsum <mark>accusamus</mark> reprehenderit, <ins>doloribus</ins>, earum odit porro quo corporis,<q>commodi quam deleniti nesciunt</q> voluptatum sit ratione consequatur
+        tempore eveniet.
+    </p>
+
+    <p><abbr title="Turkiye Buyuk Millet Meclisi">TBMM</abbr></p>
+
+    <pre>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus natus reprehenderit. Odio optio pariatur dignissimos excepturi exercitationem itaque! Aspernatur similique mollitia nostrum harum quod dicta vero at libero excepturi.</pre
+    >
+    <hr />
+
+    <a href="https://www.google.de/">Google</a>
+
+    <div>HTML CSS JS</div>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Js</li>
+    </ul>
+    <br />
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+
+    <table>
+      <caption>
+        Kisi Bilgileri
+      </caption>
+      <thead>
+        <tr>
+          <th>Isim</th>
+          <th>Dogum Yeri</th>
+          <th>Yas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Yasin</td>
+          <td>Kayseri</td>
+          <td>29</td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="resim.jpeg" alt="" />
+    <br />
+    <audio controls>
+      <source src="301081_AB_L01_01.mp3" type="audio/mp3" />
+    </audio>
+    <br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/wHmaovR2y-A"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <embed src="https://www.youtube.com/embed/wHmaovR2y-A" type="" />
+    <br />
+
+    <a href="#sayfabasi"> Sayfa Basina Don</a>
+    -->
+
+    <!-- Form Elementleri-->
+    <form>
+        <label for="name">ADINIZ</label> <br />
+        <input type="text" id="name" /> <br />
+
+        <label for="sifre">Sifre Giriniz</label> <br />
+        <input type="password" id="sifre" /> <br />
+        <label for="email">email</label><br />
+        <input type="email" id="email" /><br />
+        <label for="tel">Telefon</label><br />
+        <input type="tel" id="tel" /><br />
+        <label for="number">Number:</label><br />
+        <input type="number" name="" id="number" /><br />
+        <label for="tarih">Tarih</label><br />
+        <input type="date" id="tarih" /><br />
+        <label for="dosya">Dosya Ekleyin</label><br />
+        <input type="file" id="dosya" /><br />
+        <label for="renk">Renk Secin</label><br />
+        <input type="color" id="renk" /><br />
+        <br /><br />
+
+        <!--Checkbox-->
+        Bildiginiz Diller: <br />
+        <input type="checkbox" id="ing" />Ingilizce
+        <input type="checkbox" id="alm" />Almanca
+        <input type="checkbox" id="fra" />Fransizca <br /><br />
+        <!--Radio-->
+        Secim Yapiniz: <br />
+        <input type="radio" name="secim" value="evet" />Evet
+        <input type="radio" name="secim" value="hayir" />Hayir
+
+        <br /><br />
+
+        <!--Select-->
+        <select>
+        <option value="ing">Ingilizce</option>
+        <option value="alm">Almanca</option>
+        <option value="fra">Fransizca</option>
+      </select>
+
+        <select>
+        <optgroup label="Ic Anadolu">
+          <option value="ank">Ankara</option>
+          <option value="kys">Kayseri</option>
+        </optgroup>
+        <optgroup label="Ege">
+          <option value="izm">Izmir</option>
+          <option value="ayd">Aydin</option>
+        </optgroup>
+      </select>
+        <br /><br />
+        <textarea name="" id="" cols="30" rows="10">
+Yorum Yapabilirsiniz</textarea
+      >
+      <datalist id="diller">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+      </datalist>
+
+      <br /><br />
+      <input list="diller" />
+      <br /><br />
+      <input type="submit" value="Kaydet" />
+      <input type="reset" value="Kaldir" />
+      <!--   <input type="button" value="Buton" /> -->
+    </form>
+    <br /><br />
+    <form>
+      <fieldset>
+        <legend>Login</legend>
+        <label for="name">ADINIZ</label> <br />
+        <input type="text" id="name" /> <br />
+
+        <label for="sifre">Sifre Giriniz</label> <br />
+        <input type="password" id="sifre" /> <br />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Diger Bilgiler</legend>
+        <select>
+          <optgroup label="Ic Anadolu">
+            <option value="ank">Ankara</option>
+            <option value="kys">Kayseri</option>
+          </optgroup>
+          <optgroup label="Ege">
+            <option value="izm">Izmir</option>
+            <option value="ayd">Aydin</option>
+          </optgroup>
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>
