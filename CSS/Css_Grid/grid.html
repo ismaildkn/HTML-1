@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 200px);
+            background-color: blue;
+            gap: 10px;
+            grid-template-areas: {
+                "box1 box1 box2" "box1 box1 box2" "box1 box1 box3" "box4 box4 box3"
+            }
+            /* grid-template-columns: 150px 200px 150px 200px; */
+            /* grid-template-columns: 150px auto auto; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: auto 25% 50%; */
+            /* grid-template-columns: repeat(4, auto);  */
+            /* repeat komutu tekrar et demektir. auto yerine pixel degeride yazilabilir */
+            /* grid-template-columns: repeat(3, 200px); */
+            /* grid-template-columns: 1fr 2fr 3fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(3, 200px); */
+            /* grid-template-rows ile satilara yukseklik ayari verilebilir. */
+            /* grid-template-rows: 200px 300px; */
+            /* grid-template-rows: 1fr 3fr; */
+            /* grid-template-rows: repeat(3, 200px); */
+            /* sitede kac satir olacagini tam bilemedigimiz durumda grid-t-rows ile bildigimiz satilarin yuksekligini ayarlariz. diger geri kalan alanla ilgili ise otomatik bir satir yuksekligi ayarlamasi yapilabilir. bunun icin gris- auto-rows o\elligi kullanilir. */
+            /* grid-auto-rows: 2fr; */
+            /* background-color: brown;
+            /* padding: 20px; */
+            /* gap: 10px; */
+            /* column-gap: 10px; */
+            /* row-gap: 10px; */
+            /* elemanlari sirlamak ve kapyalayacagi alani genisletmek icin yani satir ve sutun hizasinda genisletip kare ve dikdortgen seklinde uzaktmak icin
+      grid-template-area ozelligi kullanilir. ama bunun icin her elemana farkli klass ismi ve grid area ozelligi verilmeli. */
+        }
+        /* elemanlari esnek sekilde konumlandirabilmek icin, yani elemanlarin siralamasini degistirmek icin first-child {} ozelligi kullanilir. */
+        /* .item:first-child {
+            grid-column-start: 6;} */
+        
+        .item {
+            background-color: rgb(32, 218, 82);
+            /* padding: 20px;
+            /* margin: 15px;
+            color: #fff;
+            font-size: 25px; */
+        }
+        
+        .item-1 {
+            grid-area: box1;
+        }
+        
+        .item-2 {
+            grid-area: box2;
+        }
+        
+        .item-3 {
+            grid-area: box3;
+        }
+        
+        .item-4 {
+            grid-area: box4;
+        }
+    </style>
+</head>
+
+<body>
+    <!--grid container-->
+    <div class="container">
+        <!--Grid items: div, img, p ... -->
+        <div class="item item-1">Grid Eleman 1</div>
+        <div class="item item-2">Grid Eleman 2</div>
+        <div class="item item-3">Grid Eleman 3</div>
+        <div class="item item-4">Grid Eleman 4</div>
+        <!-- <div class="item item-5">Grid Eleman 5</div>
+        <div class="item item-6">Grid Eleman 6</div>
+        <div class="item item-7">Grid Eleman 7</div>
+        <div class="item item-8">Grid Eleman 8</div>
+        <div class="item item-9">Grid Eleman 9</div> -->
+        <!-- <div class="item">Grid Eleman 10</div>
+        <div class="item">Grid Eleman 11</div>
+        <div class="item">Grid Eleman 12</div>
+        <div class="item">Grid Eleman 13</div>
+        <div class="item">Grid Eleman 14</div>
+        <div class="item">Grid Eleman 15</div>
+        <div class="item">Grid Eleman 16</div>
+        <div class="item">Grid Eleman 17</div>
+        <div class="item">Grid Eleman 18</div> -->
+    </div>
+</body>
+
+</html>
