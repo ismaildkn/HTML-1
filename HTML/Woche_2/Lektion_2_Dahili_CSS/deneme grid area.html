@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 200px);
+            gap: 10px;
+            grid-template-areas: "box1 . box3" "box1 box2 box3" "box1 box2 box4";
+        }
+        
+        .item {
+            background-color: #f7786b;
+        }
+        
+        .item-1 {
+            grid-area: box1;
+        }
+        
+        .item-2 {
+            grid-area: box2;
+        }
+        
+        .item-3 {
+            grid-area: box3;
+        }
+        
+        .item-4 {
+            grid-area: box4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">box 1</div>
+        <div class="item item-2">box 2</div>
+        <div class="item item-3">box 3</div>
+        <div class="item item-4">box 4</div>
+    </div>
+</body>
+
+</html>
